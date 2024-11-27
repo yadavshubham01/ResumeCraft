@@ -55,6 +55,7 @@ export const updateHeader = mutation({
       throw new Error("Something went wrong");
     }
 
+   
     const identity = await ctx.auth.getUserIdentity();
     if (!identity) {
       throw new Error("Not authenticated");
@@ -150,7 +151,7 @@ export const updateExperience = mutation({
     if (!resume) {
       throw new Error("Something went wrong");
     }
-
+    
     const identity = await ctx.auth.getUserIdentity();
     if (!identity) {
       throw new Error("Not authenticated");

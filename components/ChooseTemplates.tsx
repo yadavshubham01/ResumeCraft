@@ -27,6 +27,7 @@ const ChooseTemplates = ({ myResumes = false }: { myResumes?: boolean }) => {
   const createUserResume = useMutation(api.resume.createUserResume);
   const router = useRouter();
   const templates = useQuery(api.resume.getTemplates);
+  console.log(templates)
   const myResumeTemplates = useQuery(api.resume.getUserResumes, {
     userId: user?.id || "",
   });

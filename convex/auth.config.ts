@@ -1,8 +1,10 @@
 export default {
     providers: [
       {
-        domain: "https://sound-crab-61.clerk.accounts.dev/",
+        domain: "https://rested-albacore-8.clerk.accounts.dev",
         applicationID: "convex",
       },
     ]
   };
+
+  /* */
